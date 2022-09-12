@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500&family=Karla:wght@800&display=swap');
+
+:root {
+    --accent-bright: hsl(144, 70%, 58%);
+    --accent-dull: hsl(160, 84%, 39%);
+    --bg: hsl(215, 28%, 17%);
+    --secondary: hsl(215, 30%, 22%);
+    --secondary-bright: hsl(215, 28%, 25%);
+}
+
+*,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: var(--bg);
+    box-sizing: border-box;
+    color: white;
+    display: grid;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 200;
+    height: 100vh;
+}
+
+.container {
+    margin: auto;
+    padding: 3em;
+}
+
+h1 {
+    font-family: 'Karla', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: .4em;
+}
+
+.accent {
+    color: var(--accent-bright);
+}
+
+button {
+    background-color: var(--accent-dull);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+    margin-top: 2.5em;
+    padding: .6em 1.1em;
+}
+
+.fields::before {
+    background-color: var(--secondary-bright);
+    content: '';
+    display: block;
+    height: 1px;
+    margin-block: 2em;
+    width: 100%;
+}
+
+input {
+    background-color: var(--secondary);
+    border: none;
+    border-radius: 8px;
+    color: var(--accent-bright); 
+    padding: .6em;
+    text-align: center;
+}
+
+input:last-child {
+    margin-left: 1em;
+}
